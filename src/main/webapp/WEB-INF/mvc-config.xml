@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc>
+	<entitys>
+		<entity name="student" class="com.hczoop.example.entity.Student" />
+		<entity name="user" class="com.hczoop.example.entity.User" />
+	</entitys>
+	
+	<action entityName="student" class="com.hczoop.example.action.StudentAction" path="/stu">
+		<forward name="success" value="/WEB-INF/view/success.jsp"/>
+		<forward name="fail" value="/WEB-INF/view/fail.jsp"/>
+	</action>
+	
+	<action entityName="user" class="com.hczoop.example.action.UserAction" path="/user">
+		<forward name="success" value="/WEB-INF/view/success.jsp"/>
+		<forward name="fail" value="/WEB-INF/view/fail.jsp"/>
+	</action>
+</mvc>
